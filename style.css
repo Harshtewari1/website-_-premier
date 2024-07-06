@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: azure;
+    position: relative;
+    padding-top: 0.1px;
+}
+#nav{
+    height: 12vh;
+    width: 100%;
+    margin-top: 40px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav h2{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid black;
+    font-size: 23px;
+    font-weight: 600;
+}
+#nav h1{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monument;
+    font-size: 45px;
+    letter-spacing: -1px;
+}
+#nav h2:nth-last-child(2){
+    width: 29%;
+}
+#nav h2:nth-last-child(1){
+    width: 10%;
+}
+#center{
+    height: 90%;
+    width: 100%;
+    padding: 4vw;
+    position: relative;
+}
+#content{
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    position: relative;
+}
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#overlay{
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 3vw;
+    color: white;
+}
+#over1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:2vw ;
+}
+#over1 h1{
+    font-family: monument;
+    font-size: 3.6vw;
+}
+#over1 h2{
+    font-size: 1vw;
+    padding: 2vw 2.4vw;
+    border-radius: 50%;
+ 
+}
+#over2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid white;
+}
+#scroll
+{
+    height: 40vh;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#container{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    animation-name: scrollimg;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#scroll img{
+    height: 70%;
+    border-radius: 50%;
+    width: 13%;
+    object-fit: cover;
+    object-position: top;
+    margin-top: 20px;
+    margin-left: 1vw;
+}
+@keyframes scrollimg {
+    from{
+        transform: translate(0%);
+    }
+    to{
+        transform: translate(-100%);
+    }
+}
+
+#alphabet{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#alphabet h5{
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 4px;
+    border-bottom: 2px solid black;
+    margin-right: 2vw;
+}
+#alphabet h6{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 6px;
+    padding: 0.5vw 0.7vw;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+}
+#alphabet h6:hover{
+    border: 4px solid black;
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5vw;
+    margin-top: 1.5vw;
+    
+}
+#page-part1{
+    height: 100%;
+    width: 45%;
+}
+#page-part1 img{
+    height: 89%;
+    width: 100%;
+    object-fit: cover;
+}
+#page-part1 h1{
+    font-style: italic;
+    font-size: 2.5vw;
+    font-weight: 1000;
+    padding-top: 1.2vw;
+}
+
+#page-part2{
+    height: 100%;
+    width: 40%;
+   
+}
+#page-part2 img{
+    height: 65%;
+    width: 90%;
+    object-fit: cover;
+    object-position: top;
+}
+#text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 3vw;
+    padding-top: 2vw;
+}
+#text h3{
+    font-size: 1.8vw;
+    font-weight: 800;
+}
+#text h5{
+    font-size: 1.1vw;
+}
+#page3{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 0px 90px;
+}
+#page3-part1{
+    height: 100%;
+    width: 30%;
+}
+#page3-part1 img{
+    height: 85%;
+    width: 100%;
+    object-fit: cover;
+}
+#page3-part1 h3{
+    font-size: 1.5vw;
+    padding: 5px;
+}
+#page3-part2{
+    height: 100%;
+    width: 55%;
+    background-color: aqua;
+}
+#page3-part2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+#page4{
+    height: 70%;
+    width: 100%;
+    margin: 1.5vw;
+    padding-left: 10vw;
+}
+#page4 img{
+    height: 100%;
+    width: 86%;
+    
+}
